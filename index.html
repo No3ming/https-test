@@ -9,7 +9,7 @@
 </video>
 <button id="snap">截图</button>
 <canvas id="canvas" width="1024" height="800"></canvas>
-<script src='./bower_components/debug.js/debug.js'></script>
+<script src='./node_modules/vconsole/dist/vconsole.min.js'></script>
 <script type="text/javascript">
 var video = document.getElementById("video");
 var canvas=document.getElementById("canvas");
@@ -20,7 +20,7 @@ navigator.getUserMedia({video:true,audio: false},gotStream,noStream);//打开摄
 //成功打开摄像头
 debug.log(navigator.getUserMedia);
 function gotStream(stream){
-    debug.log(stream);
+    console.log(stream);
 video.src =URL.createObjectURL(stream);
 video.onerror= function(){
 stream.stop();
