@@ -1,0 +1,26 @@
+{
+  "name": "m-debug.js",
+  "version": "1.0.1",
+  "description": "debug your code in mobile",
+  "main": "debug.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binnng/debug.js.git"
+  },
+  "scripts": {
+    "build": "rm -rf build && mkdir build && uglifyjs debug.js -o build/debug.min.js -m"
+  },
+  "keywords": [
+    "debug",
+    "console"
+  ],
+  "author": "imbinnng@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/binnng/debug.js/issues"
+  },
+  "homepage": "https://github.com/binnng/debug.js",
+  "dependencies": {
+    "uglify-js": "^2.4.15"
+  }
+}
